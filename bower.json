@@ -1,0 +1,23 @@
+{
+  "name": "pokespawn",
+  "homepage": "",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "javascript-auto-complete": "^1.0.4",
+    "picnic": "^6.1.4",
+    "jquery": "^3.1.0",
+    "remodal": "^1.1.0",
+    "zepto.js": "^1.1.6"
+  }
+}

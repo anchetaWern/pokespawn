@@ -1,0 +1,29 @@
+{
+    "name": "anchetaWern/pokespawn",
+    "description": "A Pokemon spawn locations recorder",
+    "keywords": [],
+    "homepage": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wern ANCHETA",
+            "email": "",
+            "homepage": "http://wern-ancheta.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17",
+        "danrovito/pokephp": "^1.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "gregwar/image": "^2.0",
+        "vlucas/phpdotenv": "^2.3"
+    },
+    "autoload": { 
+        "psr-4": { 
+            "App\\": "src/app" 
+        } 
+    }
+}

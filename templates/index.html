@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PokéSpawn</title>
+    <link rel="stylesheet" href="lib/picnic/picnic.min.css">
+		<link rel="stylesheet" href="lib/remodal/dist/remodal.css">
+		<link rel="stylesheet" href="lib/remodal/dist/remodal-default-theme.css">
+    <link rel="stylesheet" href="lib/javascript-auto-complete/auto-complete.css">
+    <link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="favicon.ico"><!-- by Maicol Torti https://www.iconfinder.com/Maicol-Torti -->
+</head>
+<body>
+	<div id="header">
+		<div id="title">
+			<img src="logo.png" alt="logo" class="header-item" />
+			<h1 class="header-item">PokéSpawn</h1>
+		</div>
+		<input type="text" id="place" class="controls" placeholder="Where are you?">
+	</div>
+
+
+	<div id="map"></div>
+
+	<div id="add-pokemon" class="remodal" data-remodal-id="modal">
+		<h3>Plot Pokémon Location</h3>
+		<form method="POST" id="add-pokemon-form">
+			<div>
+				<input type="hidden" name="pokemon_id" id="pokemon_id">
+				<input type="hidden" name="pokemon_lat" id="pokemon_lat">
+				<input type="hidden" name="pokemon_lng" id="pokemon_lng">
+				<input type="text" name="pokemon_name" id="pokemon_name" placeholder="Pokémon name">
+			</div>
+			<div>
+				<button type="button" id="save-location">Save Location</button>
+			</div>
+		</form>
+	</div>
+
+	<script src="lib/zepto.js/dist/zepto.min.js"></script>
+	<script src="lib/remodal/dist/remodal.min.js"></script>
+	<script src="lib/javascript-auto-complete/auto-complete.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc3NVsJCJPJ6_r_HsZ545Jc6hkvef-CCc&callback=initMap&libraries=places" defer></script>
+</body>
+</html>
